@@ -1,0 +1,23 @@
+name: CICD
+on: push
+jobs:
+  build_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run many steps
+      run: |
+        pwd
+        ls
+        echo "Hello Class"
+  
+  test_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run Tests
+      run: echo "Running Tests"
+  
+  deploy_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy
+      run: echo "Deploying"
